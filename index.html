@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <container class="main">
+      <!-- =============top============= -->
+      <div class="top">
+        <h1 class="top-heading">Metric/Imperial Unit Conversion</h1>
+        <input type="text" id="input-nbr" placeholder="##" />
+        <div>
+          <button id="conv-btn">Convert</button>
+          <button id="reset-btn">Reset</button>
+        </div>
+      </div>
+      <!-- ============bottom============= -->
+      <!-- =============first============= -->
+      <div class="bottom">
+        <div class="bottom-first conv-cont">
+          <h2 class="conv-subhead">Length (Meter/Feet)</h2>
+          <span id="length">## units = conv units | ## units = conv units</span>
+        </div>
+        <!-- =============second============= -->
+        <div class="bottom-second conv-cont">
+          <h2 class="conv-subhead">Volume (Liters/Gallons)</h2>
+          <span id="volume">## units = conv units | ## units = conv units</span>
+        </div>
+        <!-- =============third============= -->
+        <div class="bottom-third conv-cont">
+          <h2 class="conv-subhead">Mass (Kilograms/Pounds)</h2>
+          <span id="mass">## units = conv units | ## units = conv units</span>
+        </div>
+      </div>
+    </container>
+    <script src="./app.js"></script>
+  </body>
+</html>
